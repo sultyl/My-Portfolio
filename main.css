@@ -119,6 +119,34 @@ header nav .nav-toggle{
     animation: type 10s steps(40)infinite;
     white-space: nowrap;
 }
+
+@media screen and (min-width: 480px){
+    .title{
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        color: transparent;
+    }
+    .title:before{
+        content:'My name is Adeleke Sultan,a FrontEnd Dev';
+        text-transform: uppercase;
+        position: absolute;
+        left:0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        color:#fff;
+        overflow: hidden;
+        border-right: 1px solid #fff;
+        animation: type 10s steps(40)infinite;
+        white-space: pre-wrap;
+    }
+}
+
+
 @keyframes type{
     0%{
         width: 0;
